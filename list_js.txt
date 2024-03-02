@@ -1,0 +1,27 @@
+Berikut adalah contoh kode JavaScript untuk membuat dan menggunakan daftar (list):
+
+// Membuat array (daftar) kosong
+var myList = [];
+
+// Menambahkan elemen ke dalam daftar
+myList.push("apel");
+myList.push("jeruk");
+myList.push("pisang");
+
+// Mengakses elemen dari daftar
+console.log("Elemen pertama:", myList[0]); // Output: apel
+console.log("Elemen kedua:", myList[1]);  // Output: jeruk
+console.log("Elemen ketiga:", myList[2]); // Output: pisang
+
+// Menghitung panjang daftar
+console.log("Panjang daftar:", myList.length); // Output: 3
+
+// Menghapus elemen dari daftar
+var removedElement = myList.pop(); // Menghapus elemen terakhir
+console.log("Elemen yang dihapus:", removedElement); // Output: pisang
+
+// Mengakses daftar menggunakan perulangan
+console.log("Mengakses daftar menggunakan perulangan:");
+for (var i = 0; i < myList.length; i++) {
+    console.log("Elemen ke-" + (i+1) + ":", myList[i]);
+}
