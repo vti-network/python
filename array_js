@@ -1,0 +1,25 @@
+Tentu, berikut adalah contoh sederhana dari sebuah array dalam JavaScript:
+
+// Membuat sebuah array
+var fruits = ["apel", "pisang", "jeruk", "anggur"];
+
+// Mengakses elemen array
+console.log("Buah pertama:", fruits[0]); // Output: apel
+console.log("Buah kedua:", fruits[1]);   // Output: pisang
+console.log("Buah ketiga:", fruits[2]);  // Output: jeruk
+
+// Menambahkan elemen baru ke dalam array
+fruits.push("mangga");
+
+// Mengakses panjang array setelah penambahan elemen baru
+console.log("Panjang array setelah penambahan:", fruits.length); // Output: 5
+
+// Menghapus elemen dari array
+var removedFruit = fruits.pop(); // Menghapus elemen terakhir
+console.log("Buah yang dihapus:", removedFruit); // Output: mangga
+
+// Iterasi melalui array menggunakan forEach
+console.log("Iterasi melalui array:");
+fruits.forEach(function(fruit, index) {
+    console.log("Buah ke-" + (index + 1) + ":", fruit);
+});
