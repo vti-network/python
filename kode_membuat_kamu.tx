@@ -1,0 +1,44 @@
+import requests
+import time
+
+kuncinya = ''
+file = '.txt'
+url = 'https://raw.githubusercontent.com/vti-network/python/main/'
+
+def kata_kunci():
+    test = 'test.txt'
+    print("\n========================================")
+    print("============ selamat datang    ===")
+    print("============ di python example ===")
+    print("============ by saepul millah  ===")
+    print("========================================")
+    print("Ubah kata kunci ")
+    ubah_kata_kunci = input("Atau Gunakan Default (y/n): ")
+    print("========================================")
+
+    if ubah_kata_kunci.lower() == 'y':
+        cari = test
+        cariDigithub(cari)
+        return cari
+    
+    else:
+        setup_kata_kunci_manual = input("Kata Kuncinya?: ")
+        cari = setup_kata_kunci_manual
+        cariDigithub(cari)
+        return cari
+
+def cariDigithub(cari):
+    try:
+        github = requests.get(url + cari )
+        github.raise_for_status()  # Menghasilkan exception jika ada kesalahan saat mengambil konten
+        if github.status_code == 200:
+            content = github.text
+            for char in content:
+                print(char, end='', flush=True)
+                time.sleep(0.05)
+        else:
+            print("Gagal mendapatkan konten. Kode status:", github.status_code)
+    except requests.exceptions.RequestException as e:
+        print("Error saat mengambil konten:", e)
+
+kata_kunci()
