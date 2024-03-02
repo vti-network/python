@@ -1,0 +1,46 @@
+
+Tentu, berikut adalah beberapa contoh pengulangan (looping) dalam JavaScript:
+
+Pengulangan dengan for loop:
+javascript
+Copy code
+// Menggunakan for loop untuk mencetak angka dari 1 hingga 5
+for (var i = 1; i <= 5; i++) {
+    console.log(i);
+}
+
+Pengulangan dengan while loop:
+javascript
+Copy code
+// Menggunakan while loop untuk mencetak angka dari 1 hingga 5
+var j = 1;
+while (j <= 5) {
+    console.log(j);
+    j++;
+}
+Pengulangan dengan do-while loop:
+javascript
+Copy code
+// Menggunakan do-while loop untuk mencetak angka dari 1 hingga 5
+var k = 1;
+do {
+    console.log(k);
+    k++;
+} while (k <= 5);
+Pengulangan dengan forEach untuk array:
+javascript
+Copy code
+// Menggunakan forEach untuk mencetak elemen-elemen array
+var fruits = ["apel", "pisang", "jeruk"];
+fruits.forEach(function(fruit) {
+    console.log(fruit);
+});
+Pengulangan dengan for-in loop untuk objek:
+javascript
+Copy code
+// Menggunakan for-in untuk mencetak properti objek
+var person = {nama: "John", umur: 30, pekerjaan: "Developer"};
+for (var key in person) {
+    console.log(key + ": " + person[key]);
+}
+Dalam semua contoh di atas, pengulangan digunakan untuk melakukan tugas-tugas tertentu secara berulang. Anda dapat memilih jenis pengulangan yang paling sesuai dengan kebutuhan Anda, tergantung pada situasi dan struktur data yang digunakan.
