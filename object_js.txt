@@ -1,0 +1,30 @@
+Tentu, berikut adalah contoh sederhana dari sebuah objek dalam JavaScript:
+
+// Membuat sebuah objek
+var person = {
+    nama: "John Doe",
+    umur: 30,
+    pekerjaan: "Pengembang Perangkat Lunak",
+    alamat: {
+        jalan: "Jalan Raya",
+        kota: "Kota X",
+        kodePos: "12345"
+    },
+    hobi: ["membaca", "bermain musik", "olahraga"]
+};
+
+// Mengakses properti dari objek
+console.log("Nama:", person.nama); // Output: John Doe
+console.log("Umur:", person.umur); // Output: 30
+console.log("Pekerjaan:", person.pekerjaan); // Output: Pengembang Perangkat Lunak
+console.log("Alamat:", person.alamat.jalan + ", " + person.alamat.kota); // Output: Jalan Raya, Kota X
+
+// Mengakses properti dalam array di dalam objek
+console.log("Hobi pertama:", person.hobi[0]); // Output: membaca
+console.log("Hobi kedua:", person.hobi[1]);  // Output: bermain musik
+
+// Menambahkan properti baru ke dalam objek
+person.email = "john.doe@example.com";
+
+// Mengakses properti baru yang ditambahkan
+console.log("Email:", person.email); // Output: john.doe@example.com
