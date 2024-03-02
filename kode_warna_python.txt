@@ -1,4 +1,4 @@
-\n
+#py
 contoh class warna
 class color:
     PURPLE = '\033[95m'
